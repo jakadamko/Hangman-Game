@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HangMan</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<header>
+</header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="assets/images/drinks2.jpg" alt="drinks" />
+            <h1 id="titleH">HangMan</h1>
+            <h2>Alcoholics Edition</h2>
+        </div>
+    </div>
+</div>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 leftS">
+                <h1>Pic goes here</h1>
+                <p id="answer"></p>
+                <p id="wAnswer"></p>
+
+            </div>
+            <div class="col-md-4 rightS">
+                <h1>Guess a letter</h1>
+                <input id="letter" type="text">
+                <input type="button" value="letter" onClick="Letter()" />
+                
+                <p id="counter"></p>
+                <p id="stat"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

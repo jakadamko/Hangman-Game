@@ -1,0 +1,35 @@
+.leftS {
+    background-color: lightgrey;
+    height: 500px;
+    margin-right: 15px;
+    border: dotted red 3px;
+}
+
+.rightS {
+    background-color: lightgrey;
+    height: 500px;
+    border: dotted red 3px;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    background-color: black;
+}
+
+#titleH {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+img {
+    float: right;
+    height:225px;
+    width:835px;
+    position: 0px;
+}
+
+#answer{
+    background-color:white;
+}
