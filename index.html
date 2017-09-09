@@ -2,42 +2,35 @@
 <html>
 
 <head>
-    <title>HangMan</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/javascript/game.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <title>HangmanJS</title>
 </head>
-<header>
-</header>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="assets/images/drinks2.jpg" alt="drinks" />
-            <h1 id="titleH">HangMan</h1>
-            <h2>Alcoholics Edition</h2>
-        </div>
-    </div>
-</div>
 
 <body>
-    <div class="container">
+    <div>
+        <h1 class="header">HANGMAN!
+        <input type="button" id="RSbutton" value="New Game" onClick="window.location.reload()">
+        </h1>
+    </div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 leftS">
-                <h1>Pic goes here</h1>
-                <p id="answer"></p>
-                <p id="wAnswer"></p>
-
+            <div class="col-lg-4">
+                <div id="Box1"></div>
+                <div id="Box3"></div>
+                <div id="Box2">Your Guesses:</div>
+                <div id="Box5"></div>
+                <div id="Box4">Hint:</div>
+                <br>
             </div>
-            <div class="col-md-4 rightS">
-                <h1>Guess a letter</h1>
-                <input id="letter" type="text">
-                <input type="button" value="letter" onClick="Letter()" />
-                
-                <p id="counter"></p>
-                <p id="stat"></p>
+            <div class="col-lg-4">
+                <div id="Box6"></div>
+            </div>
+            <div class="col-lg-4">
+                <div id="Box7"></div>
             </div>
         </div>
     </div>
